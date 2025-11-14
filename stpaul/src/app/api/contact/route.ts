@@ -40,8 +40,8 @@ export async function POST(request: Request) {
     // For production, verify your domain in Resend dashboard
     try {
       const { data, error } = await resend.emails.send({
-        from: 'onboarding@resend.dev', // Change to verified domain email for production
-        to: 'sam@redtowerdigital.com',
+        from: 'contact@stpauluccpekin.org', // Change to verified domain email for production
+        to: 'stpauluccpekin@yahoo.com',
         subject: `New Contact Form Submission from ${name}`,
         html: `
           <h2>New Contact Form Submission</h2>

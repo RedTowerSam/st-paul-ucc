@@ -60,7 +60,7 @@ export default function Footer() {
       </div>
       <div className="wrapper-full">
         <div className="copy-box">
-          <a href="http://www.redtowerdigital.com" className="template-link-footer transparence">Made by Red Tower</a>
+          <a href="http://www.redtowerdigital.com" className="template-link-footer transparence">Site Design by Red Tower</a>
         </div>
       </div>
     </div>

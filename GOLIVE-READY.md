@@ -66,10 +66,10 @@ The contact form **is fully functional**:
 3. **Environment Variable Setup**
    - **Local testing:** Create `.env.local` file in `stpaul/` directory:
      ```
-     RESEND_API_KEY=re_5598Cdtr_3yAX9mTLr6bdoJ7H1ain4Xvd
+     RESEND_API_KEY=your_resend_api_key_here
      ```
    - **Vercel production:** Add `RESEND_API_KEY` in Vercel dashboard → Settings → Environment Variables
-   - **Value:** `re_5598Cdtr_3yAX9mTLr6bdoJ7H1ain4Xvd`
+   - **Value:** Your Resend API key (get from Resend dashboard)
 
 4. **Test the Form**
    - Start dev server: `cd stpaul && npm run dev`
@@ -292,7 +292,7 @@ The contact form **is fully functional**:
    - **Output Directory:** `.next` (default)
 
 3. **Add Environment Variables**
-   - `RESEND_API_KEY` = `re_5598Cdtr_3yAX9mTLr6bdoJ7H1ain4Xvd` (for contact form)
+   - `RESEND_API_KEY` = `redacted` (for contact form)
 
 4. **Deploy**
    - Click "Deploy"
@@ -377,7 +377,7 @@ npm install resend
 
 1. **Email Service Choice**
    - ✅ **Resend selected and configured**
-   - API key: `re_5598Cdtr_3yAX9mTLr6bdoJ7H1ain4Xvd`
+   - API key: Configured in Vercel environment variables
    - Decision needed: Verify domain in Resend for production? (Optional - test domain works)
 
 2. **Contact Form Recipient Email**
