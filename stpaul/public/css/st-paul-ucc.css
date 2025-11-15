@@ -659,6 +659,7 @@ blockquote {
 
 .form {
   text-align: left;
+  margin-bottom: 2rem;
 }
 
 .text-field {
