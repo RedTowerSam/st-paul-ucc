@@ -38,7 +38,7 @@ export default function ContactUsPage() {
  }
  };
 
- const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+ const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
  setFormData(prev => ({
  ...prev,
  [e.target.name]: e.target.value
@@ -89,16 +89,17 @@ export default function ContactUsPage() {
  required
  />
  <label htmlFor="Message-2" className="field-label">YOUR MESSAGE:</label>
- <input 
- type="text" 
+ <textarea 
  className="text-field message w-input" 
- maxLength={256} 
+ maxLength={1000} 
  name="message" 
  placeholder="Enter your message" 
  id="Message-2" 
+ rows={6}
  value={formData.message}
  onChange={handleChange}
  required
+ style={{ resize: 'vertical', minHeight: '120px' }}
  />
  <div className="top-padding">
  <input 
